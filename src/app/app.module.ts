@@ -7,10 +7,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+// Splash - #1
+// Add Splash Page to module
+
+import { SplashPage } from '../pages/splash/splash';
+
+// Splash - #2 
+// Also add preferrences to config.xml
+// <preference name="FadeSplashScreen" value="false"/>
+// <preference name="AutoHideSplashScreen" value="false"/>
+// <preference name="ShowSplashScreenSpinner" value="false"/>
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    SplashPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +31,8 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    SplashPage
   ],
   providers: [
     StatusBar,
