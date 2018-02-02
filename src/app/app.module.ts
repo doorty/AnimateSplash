@@ -8,11 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 // Splash - #1
+// npm install --save ng-lottie
+import { LottieAnimationViewModule } from 'ng-lottie';
+
+// Splash - #2
 // Add Splash Page to module
 
 import { SplashPage } from '../pages/splash/splash';
 
-// Splash - #2 
+// Splash - #23
 // Also add preferrences to config.xml
 // <preference name="FadeSplashScreen" value="false"/>
 // <preference name="AutoHideSplashScreen" value="false"/>
@@ -26,6 +30,7 @@ import { SplashPage } from '../pages/splash/splash';
   ],
   imports: [
     BrowserModule,
+    LottieAnimationViewModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

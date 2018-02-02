@@ -9,7 +9,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class SplashPage {
 
+  public splashConfig: Object;
+
   constructor(public viewCtrl: ViewController, public splashScreen: SplashScreen) {
+
+    this.splashConfig = {
+      loop: false,
+      prerender: true,
+      autoplay: true,
+      autoloadSegments: true,
+      path: 'assets/animations/splash/splash.json'
+    }
+
   }
 
   ionViewDidLoad() {
@@ -20,11 +31,13 @@ export class SplashPage {
  
     // hide default splash screen
     this.splashScreen.hide();
- 
+
+
+
     // hide our animated splash page
     setTimeout(() => {
       this.viewCtrl.dismiss();
-    }, 7000);
+    }, 5900);
  
   }
 
