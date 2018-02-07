@@ -37,7 +37,7 @@ export class SplashPage {
     // hide our animated splash page
     setTimeout(() => {
       this.viewCtrl.dismiss();
-    }, 5900);
+    }, 6000);
  
   }
 
